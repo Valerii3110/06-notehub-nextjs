@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import css from './Modal.module.css';
+import css from '@/Modal.module.css';
 
 interface ModalProps {
   children: React.ReactNode;

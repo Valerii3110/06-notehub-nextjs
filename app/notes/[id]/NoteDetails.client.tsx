@@ -2,8 +2,8 @@
 
 import { useRouter } from 'next/navigation';
 import { useQuery } from '@tanstack/react-query';
-import { fetchNoteById } from '../../../lib/api';
-import css from './NoteDetails.module.css';
+import { fetchNoteById } from '@/lib/api';
+import css from '@/NoteDetails.module.css';
 
 interface NoteDetailsClientProps {
   id: string;
