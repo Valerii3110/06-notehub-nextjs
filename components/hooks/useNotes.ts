@@ -1,6 +1,6 @@
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { fetchNotes, createNote, deleteNote } from '@/lib/api';
-import type { Note, NoteTag } from '../../types/note';
+import type { Note, NoteTag } from '@/types/note';
 
 export interface FetchNotesResponse {
   notes: Note[];
