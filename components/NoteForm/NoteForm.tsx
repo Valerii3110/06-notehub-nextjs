@@ -15,9 +15,9 @@ interface NoteFormProps {
 const validationSchema = Yup.object({
   title: Yup.string()
     .required('Title is required')
-    .min(1, 'Title must be at least 1 character')
-    .max(100, 'Title must be less than 100 characters'),
-  content: Yup.string().max(1000, 'Content must be less than 1000 characters').optional(),
+    .min(3, 'Title must be at least 3 characters')
+    .max(50, 'Title must be less than 50 characters'),
+  content: Yup.string().max(500, 'Content must be less than 500 characters').optional(),
   tag: Yup.string()
     .oneOf(['Todo', 'Work', 'Personal', 'Meeting', 'Shopping'] as NoteTag[])
     .required('Tag is required'),
